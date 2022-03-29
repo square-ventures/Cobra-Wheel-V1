@@ -1,0 +1,447 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: url("assets/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+  background-color: #585858;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#app {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.marker {
+  position: absolute;
+  width: 60px;
+  left: 172px;
+  top: -20px;
+  z-index: 2;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.button {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.blur {
+  animation: blur 10s;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(1.5px);
+  }
+  80% {
+    filter: blur(1.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.payments {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.payment-image {
+  height: 72px;
+  width: 594px;
+  left: 663px;
+  top: 612px;
+  border-radius: 0px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 180px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-1 {
+  background-color: #fefefe;
+  background-image: url("assets/tablet/Pop-up\ 1_new.webp");
+  background-size: cover;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 380px;
+  height: 468px;
+  border-radius: 32px;
+}
+
+.modal-content-2 {
+  background-color: #fefefe;
+  background-image: url("assets/tablet/Pop-up-2_new.webp");
+  background-size: cover;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 380px;
+  height: 468px;
+  border-radius: 32px;
+}
+
+.image-bottom {
+  height: 492px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#gimmick {
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  z-index: 9999;
+  gap: 9vw;
+}
+
+.logo-ask,
+.logo-daddy {
+  height: 48px;
+  width: 138px;
+  margin-top: 30px;
+}
+
+.main-image {
+  z-index: 9999999;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: px;
+}
+
+.modal-text-p {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 190px;
+}
+
+.modal-text-p-II {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 179px;
+}
+
+.modal-text-p1 {
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.modal-text-p2 {
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.modal-text-2 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.button-register {
+  height: 72px;
+  width: 267px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-ask-bottom,
+.logo-daddy-bottom {
+  display: none;
+}
+
+.slider {
+  height: 70px;
+  width: 100%;
+  background-color: #000;
+  margin-top: -5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 40px 16px 40px;
+}
+.footer-logo{
+  width: 60px;
+  height: 60px;
+}
+.footer-text {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 2200px) {
+  .main-image {
+    padding-top: 0;
+  }
+
+  #app {
+    width: 600px;
+    height: 600px;
+  }
+
+  .marker {
+    position: absolute;
+    width: 60px;
+    left: 45%;
+    top: -20px;
+    z-index: 2;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (orientation: portrait) {
+  #app {
+    height: 380px;
+    width: 380px;
+  }
+
+  .marker {
+    position: absolute;
+    width: 60px;
+    left: 42%;
+    top: -20px;
+    z-index: 2;
+  }
+
+  .image-bottom {
+    height: 408px;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+  #app {
+    height: 350px;
+    width: 350px;
+  }
+
+  .marker {
+    position: absolute;
+    width: 60px;
+    left: 42%;
+    top: -20px;
+    z-index: 2;
+  }
+
+  .image-bottom {
+    height: 307px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main-image {
+    margin-top: -108px;
+  }
+
+  .image-bottom {
+    height: 238px;
+    margin-top: 10vh;
+  }
+
+  #app {
+    height: 296px;
+    width: 296px;
+  }
+
+  .marker {
+    left: 40%;
+  }
+
+  .container-logo {
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+
+  .payment-image {
+    height: 70px;
+    width: 576px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .payment-image {
+    height: 82px;
+    width: 296px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo-ask,
+  .logo-daddy {
+    display: none;
+  }
+
+  .logo-ask-bottom,
+  .logo-daddy-bottom {
+    display: block;
+    height: 48px;
+    width: 138px;
+    left: 182px;
+    top: 942px;
+    border-radius: 4px;
+  }
+
+  .logos-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 20px;
+  }
+
+  .footer-text {
+    font-family: Roboto;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal-content-1 {
+    background-position: center;
+    width: 296px;
+  }
+
+  .modal-text-p {
+    margin-top: 150px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 180px;
+  }
+
+  .modal-text-2 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .spin-again {
+    height: 56px;
+    width: 209px;
+  }
+}

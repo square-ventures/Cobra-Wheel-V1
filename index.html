@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weiben - Wheel of fortune</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container-logo">
+      <img class="logo-ask" src="assets/AskGamblers-logologo.svg" alt="" />
+      <img class="logo" src="assets/logo.png" alt="" />
+      <img class="logo-daddy" src="assets/Casino-daddy-logo.svg" alt="" />
+    </div>
+    <div id="app">
+      <img
+        class="marker"
+        src="https://cobra.casino-backend.com/system/comfy/cms/files/files/000/001/077/original/marker.png"
+      />
+      <img class="wheel" src="assets/wheel22.png" />
+      <img id="myBtn" class="button" src="assets/spin.png" />
+    </div>
+
+    <div class="payments">
+      <picture>
+        <source
+          media="(max-width:600px)"
+          srcset="assets/payment-logos_mobile.webp"
+        />
+
+        <img
+          class="payment-image"
+          src="assets/payment-logos_desktop.webp"
+          alt=""
+        />
+      </picture>
+    </div>
+
+    <div class="main-image">
+      <picture>
+        <source
+          media="(max-width:760px)"
+          srcset="assets/tablet/cobras-podium-image_mobile.webp"
+        />
+        <source
+          media="(max-width:1366px) and (orientation:portrait)"
+          srcset="assets/tablet/cobras-podium-image_tablet-portrait.webp"
+        />
+        <source
+          media="(max-width:1366px) and (orientation:landscape)"
+          srcset="assets/tablet/cobras-podium-image_tablet-landscape.webp"
+        />
+
+        <img
+          class="image-bottom"
+          src="assets/cobras-podium-image_4k.webp"
+          alt=""
+        />
+      </picture>
+    </div>
+
+   
+    <div class="logos-bottom">
+      <img
+        class="logo-ask-bottom"
+        src="assets/AskGamblers-logologo.svg"
+        alt=""
+      />
+      <img
+        class="logo-daddy-bottom"
+        src="assets/Casino-daddy-logo.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="footer">
+      <img
+      class="footer-logo"
+      src="assets/footer-logo.png"
+      alt=""
+    />
+      <p class="footer-text">
+        Copyright © 2022 Cobracasino.com is owned and operated by Dama N.V., a company registered and established under the laws of Curaçao, with registration number 152125 and registered address at Scharlooweg 39, Willemstad, Curaçao, and its wholly-owned subsidiary, Strukin Limited, registered address Pavlov Nirvana & Aipeias, 4, ALPHA TOWER, Floor 1, Flat 11, 3021, Limassol, Cyprus, and registration number ΗΕ 407624.
+        Dama N.V. is licensed and regulated by Antillephone N.V. (license no. 8048/JAZ2020-013).
+        It is the player’s sole responsibility to inquire about the existing laws and regulations of the given jurisdiction for online gambling. All the payments related to Paysafe are processed through Dama N.V.
+      </p>
+    </div>
+
+    <div id="myModal1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content-1">
+        <p class="modal-text-p">
+          Enjoy
+          <br />
+          <span class="modal-text-p1"> 250 Free Spins </span>
+          <br />
+          for your first deposit.
+          <br />
+
+          <span class="modal-text-2"
+            >Spin again for an even bigger bonus!
+          </span>
+        </p>
+
+        <div>
+          <img id="spin-again" class="button" src="assets/spinAgain.png" />
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content-2">
+        <p class="modal-text-p-II">
+          Your total win is
+          <br />
+          <span class="modal-text-p2">150% up to $777</span>
+          <br />
+          on your deposit
+          <br />
+          <span class="modal-text-p2">+ 250 Free Spins.</span>
+          <br />
+          <span class="modal-text-2"
+            >Get your reward instantly on your first deposit.</span
+          >
+        </p>
+        <a href="www.cobra-casino.com">
+          <img class="button" src="assets/button-register.webp" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
